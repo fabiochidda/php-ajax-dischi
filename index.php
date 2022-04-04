@@ -28,15 +28,25 @@ include './database.php'
         <main>
             <div class="container-main">
                 <div class="album-container">
+
+                    <?php
+
+                    foreach($albums as $disco) {
+
+                    ?>
                     <div class="card">
                         <figure>
-                            <img :src="" alt="">
+                            <img src="<?php echo $disco['poster']; ?>" alt="">
                         </figure>
-                        <h3></h3>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <h3><?php echo $disco['title'] ?></h3>
+                        <p><?php echo $disco['author'] ?></p>
+                        <p><?php echo $disco['genre'] ?></p>
+                        <p><?php echo $disco['year'] ?></p>
                     </div>
+
+                    <?php
+                    }
+                    ?>
                 </div>
             </div>
         </main>
