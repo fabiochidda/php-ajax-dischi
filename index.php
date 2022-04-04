@@ -13,5 +13,34 @@
 </head>
 <body>
     
+    <div id="app">
+
+        <header>
+            <div class="container-header">
+                <figure>
+                    <img src="./img/spotify-64.png" alt="">
+                </figure>
+            </div>
+        </header>
+
+        <main>
+            <div class="container-main">
+                <div class="album-container">
+                    <div class="card">
+                        <figure>
+                            <img :src="albumItems.poster" alt="">
+                        </figure>
+                        <h3></h3>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+
 </body>
 </html>
