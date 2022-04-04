@@ -26,12 +26,12 @@
                 <div class="album-container">
                     <div v-for="el in albums" class="card">
                         <figure>
-                            <img src="" alt="">
+                            <img :src="el.poster" alt="">
                         </figure>
-                        <h3></h3>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <h3>{{el.title}}</h3>
+                        <p>{{el.author}}</p>
+                        <p>{{el.genre}}</p>
+                        <p>{{el.year}}</p>
                     </div>
                 </div>
             </div>
